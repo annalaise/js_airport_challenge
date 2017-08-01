@@ -12,8 +12,8 @@ describe('Castle', function() {
 
   describe('dragons', function() {
     it('has dragons', function() {
-      castle.land(dragon)
-      expect(castle.dragons).toEqual([dragon]);
+      castle.land(dragon);
+      expect(castle.dragons()).toEqual([dragon]);
     });
   });
 });

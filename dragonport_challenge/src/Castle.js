@@ -1,12 +1,11 @@
 function Castle() {
+  this._dragons = [];
 }
 
 Castle.prototype.dragons =function() {
-    this = [];
+  return this._dragons;
 }
 
 Castle.prototype.land = function(dragon) {
-  console.log(dragons);
-  console.log(Castle);
-  return dragons.push(dragon)
+  this._dragons.push(dragon);
 }
